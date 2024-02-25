@@ -1,0 +1,10 @@
+/* Style for unchecked switch */
+.form-check-input[type="checkbox"]:not(:checked) {
+    border-color: #000; /* Set the border color to black */
+}
+
+/* Style for checked switch */
+.form-check-input[type="checkbox"]:checked {
+    border-color: #000; /* Set the border color to black */
+    background-color: #000; /* Set the background color to black */
+}
