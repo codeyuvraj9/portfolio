@@ -4,7 +4,7 @@ import React from 'react'
 export default function About() {
 
   return (
-    <div class="text-white text-center" style={{ color:"AFB3B7",backgroundColor: "#132E35", padding: "8vh 9vw", borderRadius:"1vw"}}>
+    <div className="text-white text-center" style={{ color:"AFB3B7",backgroundColor: "#132E35", padding: "8vh 9vw", borderRadius:"1vw"}}>
       <h2 className='pb-3'>Hi, I’m Yuvraj Singh Rajput. Nice to meet you.</h2>
       <p >I have worked on MERN stack. I have made various projects on it such as GoFood, Keeper, iNotebook, To-Do List App etc.
         I started my journey with HTML, CSS and JavaScript and then further improved my tech stack by learning frameworks such as
