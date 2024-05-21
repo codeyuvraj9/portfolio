@@ -33,7 +33,7 @@ export default function Review() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("${window.location.origin}/api/review/addreview", {
+            const response = await fetch(`${window.location.origin}/api/review/addreview`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

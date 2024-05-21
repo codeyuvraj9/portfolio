@@ -4,11 +4,6 @@ const port = 5000;
 
 
 const path = require("path");
-app.get("/", (req, res) => {
-app.use(express.static(path.resolve(__dirname, "frontend", "build")));
-res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
-});
-
 
 const mongoDB = require("./db");
 mongoDB();
@@ -19,6 +14,11 @@ app.use(express.json());
 
 //Available Routes
 app.use('/api/review', require('./Routes/UserReview'));
+
+app.get("/", (req, res) => {
+  app.use(express.static(path.resolve(__dirname, "frontend", "build")));
+  res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
+  });
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
