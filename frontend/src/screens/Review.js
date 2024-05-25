@@ -22,7 +22,7 @@ export default function Review() {
             const json = await response.json();
             setReviews(json);
         } catch (error) {
-            console.error('Error fetching reviews:', error);
+            console.log('Error fetching reviews:', error.message);
         }
     };
 
@@ -43,11 +43,11 @@ export default function Review() {
 
             setFormData({ firstName: '', lastName: '', email: '', message: '' });
             const json = await response.json();
-            console.log(json);
+            
             setSubmitted(true);
 
         } catch (error) {
-            console.error('Error submitting review:', error);
+            console.log('Error submitting review:', error.message);
         }
     };
 

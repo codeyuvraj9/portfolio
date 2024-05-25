@@ -20,10 +20,6 @@ const Review = new Schema({
    message:{
     type: String,
     required: true
-    },
-    linkedInProfile:{
-        type:String,
-        required:true
     }
 });
 module.exports = mongoose.model('portfolio', Review);
